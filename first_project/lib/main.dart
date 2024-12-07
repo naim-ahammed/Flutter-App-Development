@@ -125,32 +125,15 @@
 // }
 
 import 'package:flutter/material.dart';
+import 'package:first_project/gradient_layout.dart';
 
 void main() {
   // int sum = add(10, 20);
   // String name = "Naim ";
   // int age = 21;
   runApp(
-    MaterialApp(
-      home: Scaffold(
-
-        backgroundColor: Colors.blueAccent,
-        body: Container(
-
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(colors: [Colors.orange, 
-            Colors.pink, Colors.blue],
-            begin: Alignment.topRight,
-            end: Alignment.bottomRight,
-            ),
-            
-          ),
-
-          child: const Center(
-            child: Text("hello word, ", style:  TextStyle(color: Colors.white, fontSize: 28),),
-          ),
-        ),
-      ),
+    const MaterialApp(
+      home: Scaffold(body: GradientLayout()),
     ),
   );
 }
@@ -158,3 +141,4 @@ void main() {
 // int add(a, b) {
 //   return a + b;
 // }
+
